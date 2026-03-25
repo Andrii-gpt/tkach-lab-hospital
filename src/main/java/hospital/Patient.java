@@ -40,7 +40,6 @@ public class Patient {
         this.age = age;
     }
 
-    // Бізнес-логіка
     public boolean isAdult() {
         return age >= 18;
     }

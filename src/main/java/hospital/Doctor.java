@@ -40,7 +40,6 @@ public class Doctor {
         this.specialization = specialization;
     }
 
-    // Бізнес-логіка
     public boolean hasSpecialization(String spec) {
         return specialization != null && spec != null
                 && specialization.equalsIgnoreCase(spec);

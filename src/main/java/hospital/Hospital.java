@@ -8,7 +8,6 @@ public class Hospital {
     private List<Doctor> doctors = new ArrayList<>();
     private List<Patient> patients = new ArrayList<>();
 
-    // CREATE
 
     public void addDoctor(Doctor doctor) {
         if (doctor != null && getDoctorById(doctor.getId()) == null) {
@@ -22,7 +21,6 @@ public class Hospital {
         }
     }
 
-    // READ
 
     public Doctor getDoctorById(int id) {
         for (Doctor doctor : doctors) {
@@ -50,7 +48,6 @@ public class Hospital {
         return new ArrayList<>(patients);
     }
 
-    // UPDATE
 
     public boolean updateDoctor(int id, String newName, String newSpecialization) {
         Doctor doctor = getDoctorById(id);
@@ -76,7 +73,6 @@ public class Hospital {
         return true;
     }
 
-    // DELETE
 
     public boolean removeDoctorById(int id) {
         Doctor doctor = getDoctorById(id);
@@ -100,7 +96,6 @@ public class Hospital {
         return true;
     }
 
-    // BUSINESS LOGIC
 
     public List<Doctor> findDoctorsBySpecialization(String specialization) {
         List<Doctor> result = new ArrayList<>();
